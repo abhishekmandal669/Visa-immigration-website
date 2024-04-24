@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    /* Reset Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #contact {
+      background-color: #000;
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .contact-heading {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-description {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-info-item {
+      flex: 1;
+      max-width: 300px;
+      margin: 0 10px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-info-item i {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-item p {
+      font-size: 16px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .login-form {
+      max-width: 60%;
+      margin: 0px auto 0; /* Added margin from top */
+      padding: 20px;
+      background-color: #000;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      color: #fff; /* Changed text color to white */
+      text-align: center; /* Align text to center */
+    }
+
+    .login-form h2 {
+      color: #fff; /* Changed text color to white */
+      margin-bottom: 20px; /* Added margin below h2 */
+    }
+
+    .login-form input {
+      margin-bottom: 10px;
+    }
+
+    /* Outer black div */
+    .outer-black-div {
+      background-color: #000;
+      width: 100vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-info-item {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .contact-heading {
+        font-size: 28px;
+      }
+
+      .contact-description {
+        font-size: 16px;
+      }
+
+      .contact-info-item {
+        max-width: 100%;
+      }
+
+      .login-form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+          <a href="website.html"><img src="./Images/1.jpg" alt="" ></a>
+          
+          <div class="nav-links" id="navLinks">
+              <ul>
+                  <li><a href="./home.html">Home</a></li>
+                  <li><a href="../collage project/about.html">About</a></li>
+                  <li><a href="../services/visa/services.html">Services</a></li>
+                  <li><a href="../Team/Immigration-Educare-ILETS/index.html">Team</a></li>
+                  <li><a href="../login/login.html">Login</a></li>
+              </ul>  
+          </div> 
+      </nav>
+      <div class="container">
+        <!-- <h6 id="interior">SOLUTION FOR ALL TYPES OF VISAS</h6> -->
+      <p id="headline">TRUSTED</p>
+    <h6>Visa & Immigration Company</h6></div>
+    </div>
+    <div class="btton">
+      <a href="./about.html"><button class="btn"> VIEW PROJECT</button></a>
+        
+    </div>
+      </section>
+  <section id="contact">
+    <div class="container">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p class="contact-description">Feel free to get in touch with us. We are available 24/7!</p>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <p>+1 (123) 456-7890</p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Main Street<br>City, State 12345</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name *" required="required"
+              data-validation-required-message="Please enter your name.">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Your Email *" required="required"
+              data-validation-required-message="Please enter your email address.">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
+              data-validation-required-message="Please enter a message."></textarea>
+          </div>
+          <div class="clearfix"></div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg" id="sendMessageButton" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="outer-black-div">
+    <section id="login">
+      <div class="container">
+        <div class="login-form">
+          <h2>Login Form</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
